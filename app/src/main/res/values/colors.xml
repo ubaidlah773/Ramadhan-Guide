@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    Homescreen Color
+    <color name="blue_primary">#002D33</color>
+    <color name="blue_secondary">#124559</color>
+    <color name="blue_3">#598392</color>
+    <color name="orange">#F1B57D</color>
+
+    Beranda
+    <color name="green">#144424</color>
+    <color name="yellow">#CCCF28</color>
+
+
+
+</resources>
