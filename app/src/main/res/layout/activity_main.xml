@@ -159,6 +159,38 @@
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar1Card"
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/cardwhite"
+            >
+            <TextView
+                android:id="@+id/day1Calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="1"
+                android:fontFamily="@font/poppin_bold"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/month1Calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/day1Calendar"
+                app:layout_constraintStart_toEndOf="@+id/day1Calendar"
+                android:layout_marginStart="4dp"
+                android:text="Ramadhan"
+                android:fontFamily="@font/poppin_bold"
+                android:textSize="16sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 
@@ -169,8 +201,73 @@
         android:background="@drawable/cardyellow"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@id/year"
-        />
+        app:layout_constraintTop_toBottomOf="@id/year">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppin_bold"
+            android:text="Tarawih"
+            android:textColor="@color/white"
+            android:textSize="32sp"></TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="132dp"
+            android:layout_height="172dp"
+            android:id="@+id/countCard"
+            android:background="@drawable/cardwhite"
+            android:layout_marginTop="72dp"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:id="@+id/tarawihCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="23"
+                android:fontFamily="@font/poppin_bold"
+                android:textSize="64sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tarawihCount"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Rakaat"
+                android:fontFamily="@font/poppin_bold"
+                android:textSize="24sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280dp">
+            <ImageButton
+                android:id="@+id/tarawihActivity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/whitecircle"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="36dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/card3"
