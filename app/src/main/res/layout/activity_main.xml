@@ -251,9 +251,11 @@
             android:layout_marginTop="280dp">
             <ImageButton
                 android:id="@+id/tarawihActivity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/whitecircle"
+                android:background="@drawable/whitecircle"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
