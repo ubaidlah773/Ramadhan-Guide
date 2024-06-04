@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9DDE8B">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wave1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wave2"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/judulTarawih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppin_extrabold"
+        android:text="Tarawih"
+        android:textSize="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back1"
+        android:layout_marginStart="25dp"/>
+
+    <FrameLayout
+        android:id="@+id/detail"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judulTarawih"
+        android:background="@drawable/cardwhite"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="25dp"
+        >
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sholat Tarawih adalah salah satu ibadah sunnah yang dilakukan umat  Muslim selama bulan Ramadan. Sholat ini dilaksanakan setelah sholat  Isya' dan biasanya dilakukan secara berjamaah di masjid, meskipun bisa  juga dilakukan sendiri di rumah. Sholat Tarawih umumnya dilakukan sebanyak 23 rakaat, namun ada juga melakukannya 8 rakaat."
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="gravity"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tarawih"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/block_background"
+        >
+        <ImageButton
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:background="@drawable/block_foreground"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Ramadhan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="120dp"
+            android:fontFamily="@font/poppin_bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/cardwhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textSize="50dp"
+                android:fontFamily="@font/poppin_extrabold"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="20dp"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rakaat"
+            android:textSize="40dp"
+            android:fontFamily="@font/poppin_bold"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="120dp"/>
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

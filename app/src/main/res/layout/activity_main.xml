@@ -66,6 +66,16 @@
         app:layout_constraintTop_toBottomOf="@id/ramadhan"
         />
 
+    <ImageButton
+        android:id="@+id/alarm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circlewhite_background"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="68dp"
+        android:src="@drawable/alarm">
+    </ImageButton>
+
     <FrameLayout
         android:id="@+id/card1"
         android:layout_width="wrap_content"
@@ -251,20 +261,12 @@
             android:layout_marginTop="280dp">
             <ImageButton
                 android:id="@+id/tarawihActivity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/whitecircle"
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="36dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    />
-                />
+                android:background="@drawable/cardwhite"
+                android:src="@drawable/baseline_add_24"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
@@ -277,7 +279,33 @@
         android:background="@drawable/cardorange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card1"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circlewhite_background"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/logo1"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="60dp"
+            android:text="QS.Al-Baqrah Ayat 125"
+            android:fontFamily="@font/poppin_bold"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="110dp"
+            android:text="Jus 1"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/menu"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="32dp" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
