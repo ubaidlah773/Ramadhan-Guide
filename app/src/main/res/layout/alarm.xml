@@ -22,14 +22,15 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/back1"
+        android:id="@+id/backAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/backbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/judulalarm"
@@ -39,7 +40,7 @@
         android:text="Alarm"
         android:textSize="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back1"
+        app:layout_constraintTop_toBottomOf="@+id/backAlarm"
         android:layout_marginStart="25dp"/>
 
     <FrameLayout
@@ -52,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@id/judulalarm"
         android:layout_marginStart="25dp"
         tools:ignore="MissingConstraints"
-        android:backgroundTint="#5E1675">
+        android:backgroundTint="#8C6F06">
         <FrameLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
@@ -90,13 +91,12 @@
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/alarm1"
         android:layout_marginStart="170dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/circlewhite_background"
+        android:background="@drawable/whitecircle"
         android:src="@drawable/baseline_add_24"
-        >
-    </ImageButton>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm1"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

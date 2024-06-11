@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/back1"
+        android:id="@id/backTadarus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/backbutton"
@@ -39,13 +39,13 @@
         android:text="Tadarus"
         android:textSize="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back1"
+        app:layout_constraintTop_toBottomOf="@+id/backTadarus"
         android:layout_marginStart="25dp"/>
 
     <FrameLayout
         android:id="@+id/detail"
         android:layout_width="360dp"
-        android:layout_height="250dp"
+        android:layout_height="280dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judulTadarus"
         android:background="@drawable/cardwhite"
@@ -56,9 +56,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tadarus adalah kegiatan membaca dan mengkaji Al-Qur'an secara  bersama-sama yang biasanya dilakukan selama bulan Ramadan, terutama  setelah sholat Tarawih. Dilaksanakan baik secara berjamaah di masjid  maupun secara individu, tadarus bertujuan untuk memperbanyak pahala,  meningkatkan pemahaman terhadap ajaran-ajaran Al-Qur'an, dan  menghidupkan malam-malam Ramadan dengan ibadah. Selain itu, kegiatan ini  juga mempererat kebersamaan dan keimanan umat Muslim, serta memberikan  kesempatan untuk memperbaiki bacaan dan mendalami tafsir ayat-ayat suci."
-            android:layout_marginStart="19dp"
+            android:fontFamily="@font/poppin_regular"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="20dp"
             android:textAlignment="gravity"
             />
     </FrameLayout>

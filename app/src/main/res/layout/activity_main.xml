@@ -27,10 +27,10 @@
         />
 
     <TextView
-        android:id="@+id/ramadhan"
+        android:id="@+id/monthIslamic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ramadhan"
+        android:text="@string/monthIslamic"
         android:fontFamily="@font/poppin_extrabold"
         android:layout_marginStart="32dp"
         android:layout_marginTop="58dp"
@@ -41,16 +41,16 @@
         />
 
     <TextView
-        android:id="@+id/year"
+        android:id="@+id/yearIslamic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/year"
+        android:text="@string/yearIslamic"
         android:fontFamily="@font/poppin_extrabold"
         android:layout_marginStart="32dp"
         android:textSize="32sp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ramadhan"
+        app:layout_constraintTop_toBottomOf="@id/monthIslamic"
         />
 
     <TextView
@@ -62,8 +62,8 @@
         android:layout_marginStart="8dp"
         android:textSize="32sp"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@id/year"
-        app:layout_constraintTop_toBottomOf="@id/ramadhan"
+        app:layout_constraintStart_toEndOf="@id/yearIslamic"
+        app:layout_constraintTop_toBottomOf="@id/monthIslamic"
         />
 
     <FrameLayout
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/cardgreen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/year"
+        app:layout_constraintTop_toBottomOf="@id/yearIslamic"
         android:layout_marginStart="20dp">
         <TextView
             android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                 android:id="@+id/dayNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="01"
+                android:text="@string/dayCount"
                 android:textSize="40sp"
                 android:layout_gravity="center_vertical"
                 android:fontFamily="@font/poppin_bold"
@@ -117,9 +117,10 @@
                 app:layout_constraintStart_toEndOf="@+id/dayNumber"/>
 
             <TextView
+                android:id="@+id/dayOffCounter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="29"
+                android:text="@string/dayOff"
                 android:textSize="24sp"
                 android:fontFamily="@font/poppin_bold"
                 app:layout_constraintTop_toTopOf="@+id/dateSlash"
@@ -127,7 +128,7 @@
                 android:layout_marginEnd="25dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/calendarCard"
+            android:id="@+id/calendar1Card"
             android:layout_width="132dp"
             android:layout_height="50dp"
             android:layout_marginTop="220dp"
@@ -135,58 +136,15 @@
             android:background="@drawable/cardwhite"
             >
             <TextView
-                android:id="@+id/dayCalendar"
+                android:id="@+id/monthCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:text="12"
-                android:fontFamily="@font/poppin_bold"
-                android:textSize="16sp"
-                />
-            <TextView
-                android:id="@+id/monthCalendar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="@+id/dayCalendar"
-                app:layout_constraintStart_toEndOf="@+id/dayCalendar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginStart="4dp"
-                android:text="Januari"
-                android:fontFamily="@font/poppin_bold"
-                android:textSize="16sp"
-                />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/calendar1Card"
-            android:layout_width="132dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="290dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/cardwhite"
-            >
-            <TextView
-                android:id="@+id/day1Calendar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:text="1"
-                android:fontFamily="@font/poppin_bold"
-                android:textSize="16sp"
-                />
-            <TextView
-                android:id="@+id/month1Calendar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="@+id/day1Calendar"
-                app:layout_constraintStart_toEndOf="@+id/day1Calendar"
-                android:layout_marginStart="4dp"
-                android:text="Ramadhan"
+                android:text="@string/monthset"
                 android:fontFamily="@font/poppin_bold"
                 android:textSize="16sp"
                 />
@@ -201,7 +159,7 @@
         android:background="@drawable/cardyellow"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@id/year">
+        app:layout_constraintTop_toBottomOf="@id/yearIslamic">
 
         <TextView
             android:layout_width="wrap_content"
@@ -250,22 +208,15 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="280dp">
             <ImageButton
-                android:id="@+id/tarawihActivity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/btnTarawih"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/whitecircle"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="36dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    />
-                />
+                android:background="@drawable/whitecircle"
+                android:src="@drawable/baseline_add_24"
+                android:importantForAccessibility="no" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
@@ -278,7 +229,60 @@
         android:background="@drawable/cardorange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card1"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo1"
+            android:background="@drawable/whitecircle"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tadarus"
+            android:fontFamily="@font/poppin_extrabold"
+            android:textSize="28dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juz - 1"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="110dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppin_bold"
+            android:textColor="#686D76"/>
+        <ImageButton
+            android:id="@+id/btnTadarus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/menu"
+            android:backgroundTint="#686D76"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="35dp"
+            android:importantForAccessibility="no" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/whitecircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/card3"
+        >
+        <ImageButton
+            android:id="@+id/btnAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alarm"
+            android:background="@drawable/whitecircle"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

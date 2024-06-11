@@ -22,14 +22,15 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
-        android:id="@+id/back1"
+        android:id="@+id/backTarawih"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/backbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:importantForAccessibility="no" />
 
     <TextView
         android:id="@+id/judulTarawih"
@@ -39,27 +40,27 @@
         android:text="Tarawih"
         android:textSize="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back1"
+        app:layout_constraintTop_toBottomOf="@+id/backTarawih"
         android:layout_marginStart="25dp"/>
 
     <FrameLayout
         android:id="@+id/detail"
         android:layout_width="360dp"
-        android:layout_height="160dp"
+        android:layout_height="165dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judulTarawih"
         android:background="@drawable/cardwhite"
-        tools:ignore="MissingConstraints"
         android:layout_marginStart="25dp"
         >
         <me.biubiubiu.justifytext.library.JustifyTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sholat Tarawih adalah salah satu ibadah sunnah yang dilakukan umat  Muslim selama bulan Ramadan. Sholat ini dilaksanakan setelah sholat  Isya' dan biasanya dilakukan secara berjamaah di masjid, meskipun bisa  juga dilakukan sendiri di rumah. Sholat Tarawih umumnya dilakukan sebanyak 23 rakaat, namun ada juga melakukannya 8 rakaat."
-            android:layout_marginStart="19dp"
+            android:fontFamily="@font/poppin_regular"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
-            android:textAlignment="gravity"
             />
     </FrameLayout>
 
@@ -76,7 +77,8 @@
         <ImageButton
             android:layout_width="360dp"
             android:layout_height="60dp"
-            android:background="@drawable/block_foreground"/>
+            android:background="@drawable/block_foreground"
+            android:importantForAccessibility="no" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
