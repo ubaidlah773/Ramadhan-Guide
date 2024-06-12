@@ -80,6 +80,7 @@
             android:background="@drawable/block_foreground"
             android:importantForAccessibility="no" />
         <TextView
+            android:id="@+id/tarawihDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 Ramadhan"

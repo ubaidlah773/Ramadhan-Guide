@@ -94,73 +94,112 @@
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circlewhite_background"
-            android:layout_marginTop="50dp"
             android:layout_marginStart="15dp"
-            android:backgroundTint="#40A578">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+            android:layout_marginTop="50dp"
+            android:background="@drawable/circlewhite_background">
+            <FrameLayout
+                android:id="@+id/fl1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlewhite_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
+
         </FrameLayout>
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circlewhite_background"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="85dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+            android:background="@drawable/circlewhite_background">
+
+            <FrameLayout
+                android:id="@+id/fl2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlewhite_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
         </FrameLayout>
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circlewhite_background"
+            android:layout_marginStart="155dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="155dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+            android:background="@drawable/circlewhite_background">
+
+            <FrameLayout
+                android:id="@+id/fl3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlewhite_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
         </FrameLayout>
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circlewhite_background"
+            android:layout_marginStart="225dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="225dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+            android:background="@drawable/circlewhite_background">
+
+            <FrameLayout
+                android:id="@+id/fl4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlewhite_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
         </FrameLayout>
         <FrameLayout
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circlewhite_background"
+            android:layout_marginStart="295dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="295dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"/>
+            android:background="@drawable/circlewhite_background">
+
+            <FrameLayout
+                android:id="@+id/fl5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circlewhite_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"/>
+            </FrameLayout>
         </FrameLayout>
 
 
