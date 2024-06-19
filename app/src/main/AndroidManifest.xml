@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
@@ -40,7 +42,8 @@
         <activity android:name=".Tadarus" />
         <activity android:name=".Tarawih" />
         <activity android:name=".Alarm" />
-        <receiver android:name=".AlarmReceiver"/>
+        <receiver android:name=".AlarmReceiver" android:exported="true"/>
+
 
     </application>
 
